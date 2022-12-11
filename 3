@@ -51,7 +51,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/4EpicLua/DarkAim.lua/
                                     
                                     if (DaHoodSettings.SilentAim and (k == "Hit" or k == "Target")) then
                                         
-                                        local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
+                                        
                             
                                         
                                         return (k == "Hit" and Hit or SelectedPart)
@@ -69,7 +69,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/4EpicLua/DarkAim.lua/
                                     local SelectedPart = Aiming.SelectedPart
                             
                                     
-                                    local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
+                                    
                             
                                     CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
                                 end
